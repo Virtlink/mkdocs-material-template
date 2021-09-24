@@ -55,10 +55,5 @@ plugins:
   - search
   - git-revision-date:
       enabled_if_env: CI
-  - macros
-
-extra:
-  os:
-    windows: ":fontawesome-brands-windows: Windows"
-    linux: ":fontawesome-brands-linux: Linux"
-    macos: ":fontawesome-brands-apple: macOS"
+  - macros:
+      module_name: tools/macro
