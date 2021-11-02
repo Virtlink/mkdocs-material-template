@@ -1,3 +1,6 @@
+---
+title: "MkDocs Material Template"
+---
 # MkDocs Material Template
 This is an MkDocs Material Template repository. It enables a useful set of extensions and plugins by default, and contains a Makefile that uses Docker to serve the documentation locally, and a Github workflow to publish the documentation on Github Pages by default.
 
