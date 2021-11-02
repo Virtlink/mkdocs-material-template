@@ -1,5 +1,5 @@
 ./tools/
-mkdocs==1.2.2
-mkdocs-material==7.3.0
+mkdocs==1.2.3
+mkdocs-material==7.3.6
 mkdocs-macros-plugin==0.6.0
 mkdocs-git-revision-date-plugin==0.3.1
