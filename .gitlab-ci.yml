@@ -1,4 +1,5 @@
-image: python:latest
+image: python:3.10
+
 pages:
   stage: deploy
   only:
