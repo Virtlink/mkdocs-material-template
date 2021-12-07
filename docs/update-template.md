@@ -22,7 +22,7 @@ template    git@github.com:Virtlink/mkdocs-material-template.git (push)
 If not, add the template remote repository:
 
 ```sh
-git add remote template git@github.com:Virtlink/mkdocs-material-template.git
+git remote add template git@github.com:Virtlink/mkdocs-material-template.git
 ```
 
 
@@ -53,3 +53,8 @@ git merge template/main
 
 ## Fix Any Conflicts, and Commit
 Now use the Git command line to fix any merge conflicts, and commit the result.
+
+
+## Fix the Breaking Changes
+New versions of MkDocs and MkDocs Material can have breaking changes.
+[Find them here](https://squidfunk.github.io/mkdocs-material/upgrade/#changes-to-mkdocsyml).
