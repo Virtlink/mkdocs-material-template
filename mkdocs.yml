@@ -11,14 +11,10 @@ theme:
   icon:
     logo: fontawesome/solid/book
     repo: fontawesome/brands/github
-  # palette:
-  #   scheme: default
-  #   primary: blue grey
-  #   accent: orange
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: spoofax
+      scheme: default
       primary: blue grey
       accent: orange
       toggle:
