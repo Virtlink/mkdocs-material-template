@@ -34,6 +34,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.indexes
+    - content.code.annotate
     
 extra_css:
   - assets/styles.css
