@@ -30,7 +30,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   font:
-    code: JetBrains Mono
+    code: "JetBrains Mono"
   features:
     - navigation.tabs
     - navigation.top

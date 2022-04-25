@@ -11,16 +11,21 @@ else
 endif
 
 # Builds the Docker image and outputs the hash of the built image
-DOCKER_BUILD_CMD = docker build --quiet --file $(DOCKERFILE) $(ROOT) | head -n 1
+DOCKER_BUILD_CMD := docker build --quiet \
+  --build-arg PORT=$(PORT) \
+  --build-arg TOOLS=$(TOOLS) \
+  --build-arg REQUIREMENTS=$(REQUIREMENTS) \
+  --file $(DOCKERFILE) \
+  $(ROOT) | head -n 1
 # Runs Docker with the specified image,
 #   mounting the docs directory
 #   mounting the known_hosts (for GitHub authentication)
 #   mounting the SSH agent socket (for GitHub authentication)
-DOCKER_BASE_CMD = docker run --rm -it -p $(PORT):$(PORT) \
+DOCKER_BASE_CMD := docker run --rm -it -p $(PORT):$(PORT) \
   -v $(ROOT):/docs \
   -v ~/.ssh/known_hosts:/root/.ssh/known_hosts \
   -v ${SSH_AGENT_SOCK}:/ssh-agent --env SSH_AUTH_SOCK=/ssh-agent \
-  $(shell $(DOCKER_BUILD_CMD))
+  $(or $(shell $(DOCKER_BUILD_CMD)), $(error "Command failed: ${DOCKER_BUILD_CMD}"))
 
 # Serve the docs at <http://localhost:8000/> (default)
 serve: $(DOCKERFILE)
@@ -47,4 +52,4 @@ build-image: $(DOCKERFILE)
 	echo $(shell $(DOCKER_BUILD_CMD))
 
 .PHONY: serve new build deploy help build-image
-.SILENT:
+#.SILENT:
