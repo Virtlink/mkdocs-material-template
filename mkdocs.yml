@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: MkDocs Material Template
 site_description: Template for MkDocs Material
 site_author: Daniel A. A. Pelsmaeker
