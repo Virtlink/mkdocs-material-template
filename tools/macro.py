@@ -2,12 +2,12 @@ from typing import Optional
 
 trace_icon      = ":fontawesome-solid-route:"
 debug_icon      = ":fontawesome-solid-bug:"
-info_icon       = ":fontawesome-solid-info-circle:"
-warning_icon    = ":fontawesome-solid-exclamation-triangle:"
-error_icon      = ":fontawesome-solid-exclamation-circle:"
-stop_icon       = ":fontawesome-solid-times-circle:"
-true_icon       = ":fontawesome-solid-check-square:"
-false_icon      = ":fontawesome-solid-times-circle:"
+info_icon       = ":fontawesome-solid-circle-info:"
+warning_icon    = ":fontawesome-solid-triangle-exclamation:"
+error_icon      = ":fontawesome-solid-circle-exclamation:"
+stop_icon       = ":fontawesome-solid-circle-xmark:"
+true_icon       = ":fontawesome-solid-square-check:"
+false_icon      = ":fontawesome-solid-circle-times:"
 
 windows_icon    = ":fontawesome-brands-windows:"
 macos_icon      = ":fontawesome-brands-apple:"
