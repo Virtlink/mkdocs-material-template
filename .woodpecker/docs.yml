@@ -1,0 +1,10 @@
+pipeline:
+  pages:
+    image: python:3.10
+    # TODO: Mount local absolute path
+    # volumes:
+    # - /mysite:/site
+    commands:
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install -r mkdocs_requirements.txt
+    - mkdocs build --site-dir /site
