@@ -1,4 +1,4 @@
-FROM python:alpine3.15
+FROM python:3.10-alpine
 
 ARG PORT=8000
 ARG TOOLS=tools/
