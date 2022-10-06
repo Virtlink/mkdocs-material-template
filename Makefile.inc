@@ -52,4 +52,4 @@ build-image: ${DOCKERFILE}
 	echo $(shell ${DOCKER_BUILD_CMD})
 
 .PHONY: serve new build deploy help build-image
-#.SILENT:
+.SILENT:
