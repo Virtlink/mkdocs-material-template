@@ -13,15 +13,20 @@ This template is intended both for those that include the documentation in their
 ## Quick Start
 To build the pages and see edits live using [Docker](https://www.docker.com/):
 
-```bash
+```shell
 make
 ```
 
-Or using [Python 3](https://www.python.org/):
+Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_:
 
-```bash
+```shell
+virtualenv venv
+source venv/bin/activate
+
 pip install -r mkdocs_requirements.txt
 mkdocs serve
+
+deactivate
 ```
 
 Navigate to [localhost:8000](http://localhost:8000/) to see the documentation.
@@ -29,15 +34,21 @@ The local documentation is automatically reloaded when changes occur.
 Changes pushed to the `main` branch are automatically deployed to Github Pages.
 
 ## Updating Dependencies
-Using the [pip-check-updates](https://pypi.org/project/pip-check-updates/) tool, you can check the versions of the dependencies using:
+Using the [pip-check-updates](https://pypi.org/project/pip-check-updates/) tool, you can check the versions of the dependencies. Install in a _virtual environment_:
 
-```sh
+```shell
+pip install pip-check-updates
+```
+
+Usage:
+
+```shell
 pcu mkdocs_requirements.txt
 ```
 
 And update the dependencies to their latest versions using:
 
-```sh
+```shell
 pcu -u mkdocs_requirements.txt
 ```
 
