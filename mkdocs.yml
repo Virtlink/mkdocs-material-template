@@ -3,6 +3,7 @@ site_name: MkDocs Material Template
 site_description: Template for MkDocs Material
 site_author: Daniel A. A. Pelsmaeker
 
+docs_dir: content/
 repo_url: https://github.com/Virtlink/mkdocs-material-template
 edit_uri: https://github.com/Virtlink/mkdocs-material-template/edit/main/docs
 
