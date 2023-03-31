@@ -23,7 +23,7 @@ Or using [Python 3](https://www.python.org/), creating and activating a _virtual
 virtualenv venv
 source venv/bin/activate
 
-pip install -r mkdocs_requirements.txt
+pip install -r requirements.txt
 mkdocs serve
 
 deactivate
@@ -43,13 +43,13 @@ pip install pip-check-updates
 Usage:
 
 ```shell
-pcu mkdocs_requirements.txt
+pcu requirements.txt
 ```
 
 And update the dependencies to their latest versions using:
 
 ```shell
-pcu -u mkdocs_requirements.txt
+pcu -u requirements.txt
 ```
 
 ## License

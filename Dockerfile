@@ -2,7 +2,7 @@ FROM python:3.11-alpine
 
 ARG PORT=8000
 ARG TOOLS=tools/
-ARG REQUIREMENTS=mkdocs_requirements.txt
+ARG REQUIREMENTS=requirements.txt
 
 RUN apk upgrade --update-cache -a \
  && apk add --no-cache \

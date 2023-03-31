@@ -26,11 +26,11 @@ Change the fields in `mkdocs.yml` to suit your needs. In particular, change the 
 
 
 ## Adding Plugins
-A few plugins have been enabled by default. To add additional plugins, add them to the `plugins` section of `mkdocs.yml` ([documentation](https://www.mkdocs.org/user-guide/configuration/#plugins)) and the required packages to `mkdocs_requirements.txt`. The plugins are automatically installed into the Docker image.
+A few plugins have been enabled by default. To add additional plugins, add them to the `plugins` section of `mkdocs.yml` ([documentation](https://www.mkdocs.org/user-guide/configuration/#plugins)) and the required packages to `requirements.txt`. The plugins are automatically installed into the Docker image.
 
 
 ## Updating MkDocs Material
-To change the version of MkDocs Material, change the version number in `mkdocs_requirements.txt`. The version is automatically updated in the Docker image as well.
+To change the version of MkDocs Material, change the version number in `requirements.txt`. The version is automatically updated in the Docker image as well.
 
 
 ## Serving on a Different Port
