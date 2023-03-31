@@ -503,9 +503,9 @@
 <h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
 <p>Change the fields in <code>mkdocs.yml</code> to suit your needs. In particular, change the <code>site_name</code>, <code>site_description</code> and <code>site_author</code>, and the URLs for <code>repo_url</code> (where the Github button links to) and <code>edit_uri</code> (where the pages can be edited).</p>
 <h2 id="adding-plugins">Adding Plugins<a class="headerlink" href="#adding-plugins" title="Permanent link">&para;</a></h2>
-<p>A few plugins have been enabled by default. To add additional plugins, add them to the <code>plugins</code> section of <code>mkdocs.yml</code> (<a href="https://www.mkdocs.org/user-guide/configuration/#plugins">documentation</a>) and the required packages to <code>mkdocs_requirements.txt</code>. The plugins are automatically installed into the Docker image.</p>
+<p>A few plugins have been enabled by default. To add additional plugins, add them to the <code>plugins</code> section of <code>mkdocs.yml</code> (<a href="https://www.mkdocs.org/user-guide/configuration/#plugins">documentation</a>) and the required packages to <code>requirements.txt</code>. The plugins are automatically installed into the Docker image.</p>
 <h2 id="updating-mkdocs-material">Updating MkDocs Material<a class="headerlink" href="#updating-mkdocs-material" title="Permanent link">&para;</a></h2>
-<p>To change the version of MkDocs Material, change the version number in <code>mkdocs_requirements.txt</code>. The version is automatically updated in the Docker image as well.</p>
+<p>To change the version of MkDocs Material, change the version number in <code>requirements.txt</code>. The version is automatically updated in the Docker image as well.</p>
 <h2 id="serving-on-a-different-port">Serving on a Different Port<a class="headerlink" href="#serving-on-a-different-port" title="Permanent link">&para;</a></h2>
 <p>By default the documentation is served on port <code>8000</code>. To change the default temporarily, invoke <code>make</code> like this:</p>
 <div class="highlight"><pre><span></span><code>make<span class="w"> </span><span class="nv">PORT</span><span class="o">=</span><span class="m">8080</span>
