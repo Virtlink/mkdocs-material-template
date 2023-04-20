@@ -19,6 +19,8 @@ env.bak/
 venv.bak/
 pythonenv*
 /site/
+build/
+*.egg-info/
 
 # IntelliJ
 /*.iml
