@@ -22,7 +22,7 @@ jobs:
       CI: 1   # needed for the mkdocs-git-revision-date-plugin
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v4
       - name: Setup Python
@@ -46,7 +46,7 @@ jobs:
       - name: Build Mkdocs
         run: cd docs/ && mkdocs build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: docs/site/
 
