@@ -13,4 +13,4 @@ TOOLS        ?= tools/
 # The path to the requirements.txt file, relative to ${DOCS}
 REQUIREMENTS ?= requirements.txt
 # The path where Makefile.inc lives
-include ${ROOT}/${DOCS}/Makefile.inc
+include ${DIR}/Makefile.inc
