@@ -22,9 +22,9 @@ DOCKER_BUILD_CMD := docker build --quiet \
 #   mounting the known_hosts (for GitHub authentication)
 #   mounting the SSH agent socket (for GitHub authentication)
 DOCKER_BASE_CMD := docker run --rm -it -p ${PORT}:${PORT} \
-  -v ${ROOT}:/docs \
-  -v ~/.ssh/known_hosts:/root/.ssh/known_hosts \
-  -v ${SSH_AGENT_SOCK}:/ssh-agent --env SSH_AUTH_SOCK=/ssh-agent \
+  -v ${ROOT}:/docs:ro \
+  -v ~/.ssh/known_hosts:/root/.ssh/known_hosts:ro \
+  -v ${SSH_AGENT_SOCK}:/ssh-agent:ro --env SSH_AUTH_SOCK=/ssh-agent \
   $(or $(shell ${DOCKER_BUILD_CMD}), $(error "Command failed: ${DOCKER_BUILD_CMD}"))
 
 # Serve the docs at <http://localhost:8000/> (default)
