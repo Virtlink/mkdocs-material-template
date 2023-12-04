@@ -20,6 +20,10 @@ RUN pip install --no-cache-dir -r requirements.txt \
       -type f \
       -path "*/__pycache__/*" \
       -exec rm -f {} \;
+RUN <<FILE cat > /root/.gitconfig
+[safe]
+     directory = /docs
+FILE
 
 WORKDIR /docs
 EXPOSE ${PORT}
