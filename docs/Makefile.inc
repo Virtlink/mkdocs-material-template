@@ -12,6 +12,7 @@ endif
 
 # Builds the Docker image and outputs the hash of the built image
 DOCKER_BUILD_CMD := docker build --quiet \
+  --build-arg DOCS=${DOCS} \
   --build-arg PORT=${PORT} \
   --build-arg TOOLS=${TOOLS} \
   --build-arg REQUIREMENTS=${REQUIREMENTS} \
