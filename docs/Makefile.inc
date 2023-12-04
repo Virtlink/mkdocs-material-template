@@ -16,13 +16,13 @@ DOCKER_BUILD_CMD := docker build --quiet \
   --build-arg TOOLS=${TOOLS} \
   --build-arg REQUIREMENTS=${REQUIREMENTS} \
   --file ${DOCKERFILE} \
-  ${ROOT} | head -n 1
+  ${ROOT}/${DOCS} | head -n 1
 # Runs Docker with the specified image,
-#   mounting the docs directory
+#   mounting the Git root directory
 #   mounting the known_hosts (for GitHub authentication)
 #   mounting the SSH agent socket (for GitHub authentication)
 DOCKER_BASE_CMD := docker run --rm -it -p ${PORT}:${PORT} \
-  -v ${ROOT}:/docs:ro \
+  -v ${ROOT}:/repo:ro \
   -v ~/.ssh/known_hosts:/root/.ssh/known_hosts:ro \
   -v ${SSH_AGENT_SOCK}:/ssh-agent:ro --env SSH_AUTH_SOCK=/ssh-agent \
   $(or $(shell ${DOCKER_BUILD_CMD}), $(error "Command failed: ${DOCKER_BUILD_CMD}"))
