@@ -1,8 +1,11 @@
+---
 name: Documentation
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
   workflow_dispatch:  # Allow running this workflow manually (Actions tab)
 
 permissions:
@@ -60,4 +63,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

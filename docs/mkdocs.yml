@@ -1,3 +1,4 @@
+---
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: MkDocs Material Template
 site_description: Template for MkDocs Material
@@ -37,7 +38,7 @@ theme:
     - navigation.top
     - navigation.indexes
     - content.code.annotate
-    
+
 extra_css:
   - assets/styles.css
 extra_javascript:
@@ -90,6 +91,6 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-      
+
   - macros:
       module_name: tools/macro
