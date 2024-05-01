@@ -8,6 +8,12 @@ docs_dir: content/
 repo_url: https://github.com/Virtlink/mkdocs-material-template
 edit_uri: https://github.com/Virtlink/mkdocs-material-template/edit/main/docs
 
+nav:
+  - Home:
+      - index.md
+      - update-template.md
+      - deploying.md
+
 theme:
   name: material
   language: en
