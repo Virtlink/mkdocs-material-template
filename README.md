@@ -1,9 +1,11 @@
 # MkDocs Material Template
-[![Build][badge-build-img]][badge-build-link]
-[![Documentation][badge-docs-img]][badge-docs-link]
-[![License][badge-license-img]][badge-license-link]
+[![Build][github-build-badge]][github-build]
+[![License][license-badge]][license]
+[![Documentation][documentation-badge]][documentation]
 
-This is an MkDocs Material Template repository. It enables a useful set of extensions and plugins by default, and contains a Makefile that uses Docker to serve the documentation locally, and a Github workflow to publish the documentation on Github Pages by default.
+A MkDocs Material Template repository. It enables a useful set of extensions and plugins by default, and contains a Makefile that uses Docker to serve the documentation locally, and a Github workflow to publish the documentation on Github Pages by default.
+
+[![Documentation][documentation-button]][documentation]
 
 - [Getting Started](https://virtlink.github.io/mkdocs-material-template/)
 - [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/)
@@ -60,10 +62,10 @@ pcu -u requirements.txt
 [![License: CC0-1.0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 To the extent possible under law, Daniel A. A. Pelsmaeker has waived all copyright and related or neighboring rights to the MkDocs Material Template repository. Feel free to use this as you see fit, no attribution required.
 
-
-[badge-build-link]: https://github.com/Virtlink/mkdocs-material-template/actions
-[badge-build-img]: https://github.com/Virtlink/mkdocs-material-template/actions/workflows/documentation.yml/badge.svg
-[badge-docs-link]: https://pelsmaeker.net/mkdocs-material-template/
-[badge-docs-img]: https://img.shields.io/badge/docs-available-green.svg
-[badge-license-link]: https://github.com/Virtlink/mkdocs-material-template/blob/main/LICENSE
-[badge-license-img]: https://img.shields.io/github/license/Virtlink/mkdocs-material-template
+[github-build-badge]: https://img.shields.io/github/actions/workflow/status/Virtlink/mkdocs-material-template/documentation.yml
+[github-build]: https://github.com/Virtlink/mkdocs-material-template/actions
+[license-badge]: https://img.shields.io/github/license/Virtlink/mkdocs-material-template
+[license]: https://github.com/Virtlink/mkdocs-material-template/blob/master/LICENSE
+[documentation-badge]: https://img.shields.io/badge/docs-latest-brightgreen
+[documentation]: https://pelsmaeker.net/mkdocs-material-template/
+[documentation-button]: https://img.shields.io/badge/Documentation-blue?style=for-the-badge&logo=googledocs&logoColor=white
