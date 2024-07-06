@@ -7,7 +7,7 @@ A MkDocs Material Template repository. It enables a useful set of extensions and
 
 [![Documentation][documentation-button]][documentation]
 
-- [Getting Started](https://virtlink.github.io/mkdocs-material-template/)
+- [Getting Started][documentation]
 - [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/)
 
 This template is intended both for those that include the documentation in their main repository, and those that use a separate repository for the documentation.
@@ -60,6 +60,7 @@ pcu -u requirements.txt
 
 ## License
 [![License: CC0-1.0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 To the extent possible under law, Daniel A. A. Pelsmaeker has waived all copyright and related or neighboring rights to the MkDocs Material Template repository. Feel free to use this as you see fit, no attribution required.
 
 [github-build-badge]: https://img.shields.io/github/actions/workflow/status/Virtlink/mkdocs-material-template/documentation.yml
