@@ -18,7 +18,7 @@ cd docs/
 make
 ```
 
-Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_ using `virtualenv` (the more featureful ancestor of `venv`, install with `python3 -m pip install virtualenv`):
+Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_ using `virtualenv` (the more featureful ancestor of `venv`, install with `python3 -m pip install virtualenv` or use `nix develop`):
 
 ```shell
 virtualenv venv
