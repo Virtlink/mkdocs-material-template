@@ -11,8 +11,6 @@ edit_uri: https://github.com/Virtlink/mkdocs-material-template/edit/main/docs
 nav:
   - Home:
       - index.md
-      - update-template.md
-      - deploying.md
 
 theme:
   name: material
@@ -45,13 +43,6 @@ theme:
     - navigation.indexes
     - content.code.annotate
 
-extra_css:
-  - assets/styles.css
-extra_javascript:
-  - assets/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
 markdown_extensions:
   - abbr
   - admonition
@@ -71,11 +62,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       guess_lang: false
-  - pymdownx.inlinehilite:
-      custom_inline:
-        - name: gui
-          class: guilabel
-          format: !!python/name:formatters.inline_span_format
+  - pymdownx.inlinehilite
   - pymdownx.keys:
       key_map:
         click: "Click"
@@ -97,5 +84,3 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-  - macros:
-      module_name: tools/macro

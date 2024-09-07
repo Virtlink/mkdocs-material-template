@@ -8,8 +8,6 @@ DOCS         ?= docs/
 DOCKERFILE   ?= ${ROOT}/${DOCS}/Dockerfile
 # The port on which to serve the documentation on localhost
 PORT         ?= 8000
-# The path to the tools/ directory, relative to ${DOCS}
-TOOLS        ?= tools/
 # The path to the requirements.txt file, relative to ${DOCS}
 REQUIREMENTS ?= requirements.txt
 # The path where Makefile.inc lives

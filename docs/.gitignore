@@ -21,7 +21,3 @@ pythonenv*
 /site/
 build/
 *.egg-info/
-
-# IntelliJ
-/*.iml
-/.idea/

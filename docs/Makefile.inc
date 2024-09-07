@@ -14,7 +14,6 @@ endif
 DOCKER_BUILD_CMD := docker build --quiet \
   --build-arg DOCS=${DOCS} \
   --build-arg PORT=${PORT} \
-  --build-arg TOOLS=${TOOLS} \
   --build-arg REQUIREMENTS=${REQUIREMENTS} \
   --file ${DOCKERFILE} \
   ${ROOT}/${DOCS} | head -n 1

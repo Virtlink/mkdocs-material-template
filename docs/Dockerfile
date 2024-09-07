@@ -2,7 +2,6 @@ FROM python:3.12-alpine
 
 ARG DOCS=docs/
 ARG PORT=8000
-ARG TOOLS=tools/
 ARG REQUIREMENTS=requirements.txt
 
 RUN apk upgrade --update-cache -a \
@@ -12,7 +11,6 @@ RUN apk upgrade --update-cache -a \
       openssh \
  && apk add --no-cache --virtual .build gcc musl-dev
 
-COPY ${TOOLS} tools/
 COPY ${REQUIREMENTS} requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt \
  && apk del .build gcc musl-dev \

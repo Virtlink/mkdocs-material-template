@@ -4,8 +4,8 @@ image: python:latest
 pages:
   stage: deploy
   only:
-    - master
     - main
+    - master
   script:
     - cd docs/
     - python3 -m pip install --upgrade pip
