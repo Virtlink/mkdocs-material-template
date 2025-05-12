@@ -12,6 +12,7 @@ A MkDocs Material Template repository. It enables a useful set of extensions and
 
 This template is intended both for those that include the documentation in their main repository, and those that use a separate repository for the documentation.
 
+
 ## Quick Start
 To build the pages and see edits live using [Docker](https://www.docker.com/):
 
@@ -20,14 +21,29 @@ cd docs/
 make
 ```
 
-Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_ using `virtualenv` (the more featureful ancestor of `venv`, install with `python3 -m pip install virtualenv` or use `nix develop`):
+Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_:
 
 ```shell
-virtualenv venv
-source venv/bin/activate
-
 cd docs/
+
+python3 -m venv .venv
+source .venv/bin/activate
+
 pip install -r requirements.txt
+mkdocs serve
+
+deactivate
+```
+
+Or using [UV](https://docs.astral.sh/uv/), creating and activating a _virtual environment_:
+
+```shell
+cd docs/
+
+uv venv
+uv pip install -r requirements.txt
+
+source .venv/bin/activate
 mkdocs serve
 
 deactivate
@@ -37,14 +53,9 @@ Navigate to [localhost:8000](http://localhost:8000/) to see the documentation.
 The local documentation is automatically reloaded when changes occur.
 Changes pushed to the `main` branch are automatically deployed to Github Pages.
 
+
 ## Updating Dependencies
-Using the [pip-check-updates](https://pypi.org/project/pip-check-updates/) tool, you can check the versions of the dependencies. Install in a _virtual environment_:
-
-```shell
-pip install pip-check-updates
-```
-
-Usage:
+Install the [`pip-check-updates`](https://pypi.org/project/pip-check-updates/) tool in a _virtual environment_ (e.g., using `pip install pip-check-updates` or `uv pip install pip-check-updates`). Usage:
 
 ```shell
 cd docs/
@@ -57,6 +68,20 @@ And update the dependencies to their latest versions using:
 cd docs/
 pcu -u requirements.txt
 ```
+
+> [!NOTE]
+> Install the updated dependencies using:
+>
+> ```shell
+> pip install -r requirements.txt
+> ```
+>
+> Or, when using UV:
+>
+> ```shell
+> uv pip install -r requirements.txt
+> ```
+
 
 ## License
 [![License: CC0-1.0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
