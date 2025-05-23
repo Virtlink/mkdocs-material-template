@@ -41,12 +41,9 @@ Or using [UV](https://docs.astral.sh/uv/), creating and activating a _virtual en
 cd docs/
 
 uv venv
-source .venv/bin/activate
 
 uv pip install -r requirements.txt
-mkdocs serve
-
-deactivate
+uv run mkdocs serve
 ```
 
 Navigate to [localhost:8000](http://localhost:8000/) to see the documentation.
