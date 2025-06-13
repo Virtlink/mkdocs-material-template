@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "mkdocs serve",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "mkdocs",
+            "args": ["serve"],
+            "cwd": "${workspaceFolder}/docs",
+        },
+    ]
+}
