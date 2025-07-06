@@ -24,6 +24,7 @@
             #!/usr/bin/env bash
             
             # Create and activate the virtual environment
+            export VIRTUAL_ENV_DISABLE_PROMPT=1
             test -d .venv || ${pkgs.uv}/bin/uv venv .venv
             source .venv/bin/activate
 
