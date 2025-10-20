@@ -41,7 +41,7 @@
             echo "- Installing pip packages with uv..."
             if uv pip install --upgrade pip --quiet && \
               uv pip install -r requirements.txt --quiet; then
-                package_count=$(pip list --format=freeze | wc -l)
+                package_count=$(uv pip list --format=freeze | wc -l)
                 echo "- Done. $package_count pip packages installed."
             else
                 echo "Warning: An error occurred during uv pip setup."
