@@ -3,7 +3,7 @@
 [![License][license-badge]][license]
 [![Documentation][documentation-badge]][documentation]
 
-A MkDocs Material Template repository. It enables a useful set of extensions and plugins by default, and contains a Makefile that uses Docker to serve the documentation locally, and a Github workflow to publish the documentation on Github Pages by default.
+A MkDocs Material Template repository. It enables a useful set of extensions and plugins by default, and contains a Makefile that uses Docker to serve the documentation locally, and a GitHub workflow to publish the documentation on GitHub Pages by default.
 
 [![Documentation][documentation-button]][documentation]
 
@@ -48,7 +48,7 @@ uv run mkdocs serve
 
 Navigate to [localhost:8000](http://localhost:8000/) to see the documentation.
 The local documentation is automatically reloaded when changes occur.
-Changes pushed to the `main` branch are automatically deployed to Github Pages.
+Changes pushed to the `main` branch are automatically deployed to GitHub Pages.
 
 
 ## Updating Dependencies
