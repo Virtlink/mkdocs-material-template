@@ -14,6 +14,18 @@ This template is intended both for those that include the documentation in their
 
 
 ## Quick Start
+### Nix
+To build the pages and see edits live using [Nix](https://nixos.org/):
+
+```shell
+cd docs/
+nix develop
+mkdocs serve
+```
+
+Or install `direnv` to automatically enable the development environment.
+
+### Docker
 To build the pages and see edits live using [Docker](https://www.docker.com/):
 
 ```shell
@@ -21,28 +33,11 @@ cd docs/
 make
 ```
 
-Or using [Python 3](https://www.python.org/), creating and activating a _virtual environment_:
+### UV
+Or using [UV](https://docs.astral.sh/uv/):
 
 ```shell
 cd docs/
-
-python3 -m venv .venv
-source .venv/bin/activate
-
-pip install -r requirements.txt
-mkdocs serve
-
-deactivate
-```
-
-Or using [UV](https://docs.astral.sh/uv/), creating and activating a _virtual environment_:
-
-```shell
-cd docs/
-
-uv venv
-
-uv pip install -r requirements.txt
 uv run mkdocs serve
 ```
 
