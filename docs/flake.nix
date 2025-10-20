@@ -16,7 +16,7 @@
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            python3Full    # Python 3
+            python3        # Python 3
             uv             # Python dependency manager
             figlet         # ASCII art welcome messages
           ];
