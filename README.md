@@ -1,3 +1,8 @@
+> [!WARNING]
+> _MkDocs for Material is [deprecated](https://github.com/squidfunk/mkdocs-material/issues/8523)._
+> For new projects, use [Zensical](https://zensical.org/) documentation instead.
+> Here is the [template for Zensical documentation projects](https://github.com/Virtlink/zensical-docs-template).
+
 # MkDocs Material Template
 [![Build][github-build-badge]][github-build]
 [![License][license-badge]][license]
